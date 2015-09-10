@@ -12,7 +12,7 @@ $(function () {
 	//When a seat button is clicked, the input form slides down into place
 	$seats.click(function(){
 		$("#form").slideDown("slow");
-		$(this).addClass("selected");	
+		$(this).find(":first-child").addClass("selected");	
 	});
 
 	$seats.hover(function() {
