@@ -12,8 +12,12 @@ $(function () {
 	//When a seat button is clicked, the input form slides down into place
 	$seats.click(function(){
 		$("#form").slideDown("slow");
+
+		$(this).find(":first-child").addClass("selected");	
+
 		deselectSeats();
 		$(this).addClass("selected");	
+
 	});
 
 	$seats.hover(function() {
@@ -30,8 +34,7 @@ $(function () {
 		var seatNum = $(".selected").text();
 		if(valid) {
 			$(".selected").css("background-color","red");
-			$(".selected").append(name + "reserved this seat.");
-			alert("Seat " + seatNum + " has been reserved for you. Enjoy the show!");
+
 		}
 	});
 
