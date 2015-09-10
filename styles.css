@@ -1,4 +1,22 @@
+body {
+	font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
+}
 
+h1 {
+	font-size: 30px;
+    text-align: center 
+  
+}
+
+p {
+    font-size: 20px;
+    text-align: center
+}
+
+img.resize{
+    width: 100px;
+    height: auto;
+}
 
 #key {
 	width: 80%;
@@ -7,6 +25,7 @@
 	margin-top: 10px;
 	font-size: 0.9em;
 }
+
 #key div {
 	border: 2px solid black;
 	height: 20px;
@@ -14,14 +33,14 @@
 	display: inline-block;
 	border-radius: 5px;
 }
+
 .active {
 	background-color: green;
 }
+
 .inactive {
 	background-color: red;
 }
-
-
 
 #seat {
   margin: 0 auto;
@@ -34,14 +53,6 @@
   margin-top: 10px;
   cursor: pointer;
 }
-
-
-
-body {
-	font-family: sans-serif, monospace;
-}
-
-
 
 /*This is the basic styling for the form.*/
 form {
