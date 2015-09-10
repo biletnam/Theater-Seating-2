@@ -1,5 +1,6 @@
 body {
 	font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
+	background-color: grey;
 }
 
 h1 {
@@ -42,17 +43,23 @@ img.resize{
 	background-color: red;
 }
 
-#seat {
+
+.seat {
   margin: 0 auto;
   height: 75px;
-  width: 150px;
+  width: 100%;
   background-color: green;
-  border: 2px solid black;
+  /*border: 2px solid black;*/
   border-radius: 5px;
   text-align: center;
   margin-top: 10px;
   cursor: pointer;
 }
+
+.selected {
+	background-color: blue;
+}
+
 
 /*This is the basic styling for the form.*/
 form {
