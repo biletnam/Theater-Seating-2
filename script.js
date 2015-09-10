@@ -4,15 +4,22 @@ $(function () {
 	var $name = $("#name");
 	var $email = $("#email");
 	var $reserve = $("#reserve");
+	var $seats = $(".col-lg-2");
+	var name = "";
 
 	//When a seat button is clicked, the input form slides down into place
-	$(this).click(function(){
+	$seats.click(function(){
 		$("#form").slideDown("slow");
 	});
 
+	$seats.hover(function() {
+		$(this).css("opacity", 0.5);
+	});
+
 	//When the reserve button is clicked, this checks the input fields and lets the user know their seat is reserved.
-	$reserve.on("click", function() {
+	$reserve.click(function() {
 		var valid = checkInput();
+		var name = $name.val();
 		if(valid) {
 
 			alert("Seat # has been reserved for you. Enjoy the show!");
