@@ -4,19 +4,25 @@ $(function () {
 	var $name = $("#name");
 	var $email = $("#email");
 	var $reserve = $("#reserve");
-	var $seats = $(".col-lg-2");
-
-
+	var $seats = $(".seat");
 
 
 	//When a seat button is clicked, the input form slides down into place
 	$seats.click(function(){
 		$("#form").slideDown("slow");
+
 		$(this).find(":first-child").addClass("selected");	
+
+		deselectSeats();
+		$(this).addClass("selected");	
+
 	});
 
 	$seats.hover(function() {
 		$(this).css("opacity", 0.5);
+	},
+	function() {
+		$(this).css("opacity", 1);
 	});
 
 	//When the reserve button is clicked, this checks the input fields and lets the user know their seat is reserved.
@@ -25,9 +31,14 @@ $(function () {
 		var name = $name.val();
 		if(valid) {
 			$(".selected").css("background-color","red");
+			$(".selected").append( " This seat is reserved for:  ").append(name);
 			alert("Seat # has been reserved for you. Enjoy the show!");
 		}
 	});
+
+	function deselectSeats() {
+		$seats.removeClass("selected");
+	}
 
 	//this function returns true if both of the input fields have info in them, false if not.
 	function checkInput() {
