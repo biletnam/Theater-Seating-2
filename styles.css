@@ -1,5 +1,6 @@
 body {
 	font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
+	color: white;
 	background-color: grey;
 }
 
@@ -20,10 +21,12 @@ img.resize{
 }
 
 #key {
-	width: 80%;
+	width: 0 auto;
 	text-align: center;
 	margin: 0 auto;
 	margin-top: 10px;
+	padding: 5px;
+	background-color: black;
 	font-size: 0.9em;
 }
 
@@ -35,25 +38,27 @@ img.resize{
 	border-radius: 5px;
 }
 
-.active {
-	background-color: green;
-}
-
-.inactive {
-	background-color: red;
-}
-
-
 .seat {
   margin: 0 auto;
   height: 75px;
   width: 100%;
+  color: white;
   background-color: green;
   /*border: 2px solid black;*/
   border-radius: 5px;
   text-align: center;
+  font-size: 18px;
+  padding: 10px;
   margin-top: 10px;
   cursor: pointer;
+}
+
+.available {
+	background-color: green;
+}
+
+.reserved {
+	background-color: red;
 }
 
 .selected {
@@ -64,11 +69,12 @@ img.resize{
 /*This is the basic styling for the form.*/
 form {
 	display: none;
-	background-color: cyan;
+	background-color: blue;
 	padding: 10px;
 }
 
 #reserve {
 	margin: 10px;
+	color: black;
 	display: block;
 }

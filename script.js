@@ -6,6 +6,8 @@ $(function () {
 	var $reserve = $("#reserve");
 	var $seats = $(".seat");
 
+	// var res = Math.random().floor() * 24;
+	// console.log(res);
 
 	//When a seat button is clicked, the input form slides down into place
 	$seats.click(function(){
@@ -25,13 +27,15 @@ $(function () {
 	$reserve.click(function() {
 		var valid = checkInput();
 		var name = $name.val();
+		var seatNum = $(".selected").text();
 		if(valid) {
 			$(".selected").css("background-color","red");
-			$(".selected").append(name);
-			alert("Seat # has been reserved for you. Enjoy the show!");
+			$(".selected").append(name + "reserved this seat.");
+			alert("Seat " + seatNum + " has been reserved for you. Enjoy the show!");
 		}
 	});
 
+	//when a new seat is clicked on, the old seat is deselected.
 	function deselectSeats() {
 		$seats.removeClass("selected");
 	}
