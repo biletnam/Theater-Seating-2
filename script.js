@@ -7,6 +7,8 @@ $(function () {
 	var $seats = $(".col-lg-2");
 
 
+
+
 	//When a seat button is clicked, the input form slides down into place
 	$seats.click(function(){
 		$("#form").slideDown("slow");
@@ -22,7 +24,7 @@ $(function () {
 		var valid = checkInput();
 		var name = $name.val();
 		if(valid) {
-			$(".selected#seat").css("background-color","red");
+			$(".selected").css("background-color","red");
 			alert("Seat # has been reserved for you. Enjoy the show!");
 		}
 	});
