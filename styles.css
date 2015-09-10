@@ -1,0 +1,56 @@
+
+
+#key {
+	width: 80%;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 10px;
+	font-size: 0.9em;
+}
+#key div {
+	border: 2px solid black;
+	height: 20px;
+	width: 20px;
+	display: inline-block;
+	border-radius: 5px;
+}
+.active {
+	background-color: green;
+}
+.inactive {
+	background-color: red;
+}
+
+
+
+#seat {
+  margin: 0 auto;
+  height: 75px;
+  width: 150px;
+  background-color: green;
+  border: 2px solid black;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+
+
+body {
+	font-family: sans-serif, monospace;
+}
+
+
+
+/*This is the basic styling for the form.*/
+form {
+	display: none;
+	background-color: cyan;
+	padding: 10px;
+}
+
+#reserve {
+	margin: 10px;
+	display: block;
+}

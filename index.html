@@ -1,14 +1,112 @@
+<!doctype html>
 <html>
-<head>
-	<title>KMT Theater</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-	<script src="script.js"></script>
- 	<link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-<body>
+	<head>
+		<title>Grand Cirque Theatre</title>
+		<!-- This puts a little icon in the browser tab. -->
+		<link rel="shortcut icon" href="movie-icon.png">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+					<div id="seat">A1</div>
+				</div>		
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+					<div id="seat">A2</div>
+				</div>	
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+					<div id="seat">A3</div>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+					<div id="seat">A4</div>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+					<div id="seat">A5</div>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+					<div id="seat">A6</div>
+				</div>
+			</div>
 
-	
+			<div class="row">
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+					<div id="seat">B1</div>
+				</div>		
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+					<div id="seat">B2</div>
+				</div>	
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+					<div id="seat">B3</div>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+					<div id="seat">B4</div>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+					<div id="seat">B5</div>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+					<div id="seat">B6</div>
+				</div>
+			</div>
 
-</body>
+			<div class="row">
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+					<div id="seat">C1</div>
+				</div>		
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+					<div id="seat">C2</div>
+				</div>	
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+					<div id="seat">C3</div>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+					<div id="seat">C4</div>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+					<div id="seat">C5</div>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+					<div id="seat">C6</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+					<div id="seat">D1</div>
+				</div>		
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+					<div id="seat">D2</div>
+				</div>	
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+					<div id="seat">D3</div>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+					<div id="seat">D4</div>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+					<div id="seat">D5</div>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+					<div id="seat">D6</div>
+				</div>
+			</div>
+
+		</div>	
+
+		<div id="key">
+			<div class="active"></div> = Available  
+			<div class="inactive"></div> = Unavailable
+		</div>	
+
+		<!-- This form takes in the user's name and email. -->
+		<form id="form">
+			Name: <input type="text" id="name" placeholder="Name">
+			E-mail address: <input type="email" id="email" placeholder="Name@domain.com">
+			<button id="reserve">Reserve Seat</button>
+		</form>
+	</body>
 </html>
