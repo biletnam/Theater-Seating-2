@@ -53,10 +53,16 @@ img.resize{
   cursor: pointer;
 }
 
-
+.available {
+	background-color: green;
+}
 
 .selected {
 	background-color: blue;
+}
+
+.reserved {
+	background-color: red;
 }
 
 
