@@ -1,3 +1,23 @@
+body {
+	font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
+}
+
+h1 {
+	font-size: 30px;
+    text-align: center 
+  
+}
+
+
+p {
+    font-size: 20px;
+    text-align: center
+}
+
+img.resize{
+    width: 100px;
+    height: auto;
+}
 
 
 #key {
@@ -36,10 +56,6 @@
 }
 
 
-
-body {
-	font-family: sans-serif, monospace;
-}
 
 
 
